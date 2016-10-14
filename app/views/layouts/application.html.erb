@@ -5,6 +5,7 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 <body>
 
@@ -13,7 +14,7 @@
     <div class="row greeting  ">
       
     <div class="col-md-3 hidden-md-down ">
-        <p><%=image_tag("hsmt2.png", alt: "Health Start Logo", class:"img-fluid", style:"height:50px")%></p>
+        <p><%=image_tag("hsmt2.png", alt: "Health Start Logo", class:"img-fluid", style:'height:50')%></p>
     </div>
     <div class="col-lg-6 col-md-12 greeting">
        <h1>HEALTHY START</h1>
@@ -106,7 +107,9 @@
 </ul>
   </div>
       </nav> <!-- /navbar -->
+      
+      
 <%= yield %>
-
+</div>
 </body>
 </html>
